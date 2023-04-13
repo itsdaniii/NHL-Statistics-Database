@@ -56,11 +56,11 @@
                         <input type="hidden" id="insertQueryRequest" name="insertQueryRequest">
                         Id: <input type="number" min="0" step="1" name="insId" required="true"> <br /><br />
                         Number: <input type="number" min="0" step="1" name="insNum" required="true"> <br /><br />
-                        Name: <input type="text" name="insName" required="true"> <br /><br />
+                        Name: <input type="text" pattern="[a-zA-Z]*" name="insName" required="true"> <br /><br />
                         Age: <input type="number" min="0" step="1" name="insAge" required="true"> <br /><br />
-                        Position: <input type="text" name="insPos" required="true"> <br /><br />
+                        Position: <input type="text" pattern="[a-zA-Z]*" name="insPos" required="true"> <br /><br />
                         <input type="hidden" name="insCaptain" value="0">
-                        Team: <input type="text" name="insTeam" required="true"> <br /><br />
+                        Team: <input type="text" pattern="[a-zA-Z]*" name="insTeam" required="true"> <br /><br />
 
                         <input type="submit" value="Insert" name="insertSubmit"></p>
                     </form>
@@ -73,11 +73,11 @@
                         <br />
                         <p> Enter values for the columms you want to update</p>
                         Number: <input type="number" min="0" step="1" name="updateNum"> <br /><br />
-                        Name: <input type="text" name="updateName"> <br /><br />
+                        Name: <input type="text" pattern="[a-zA-Z]*" name="updateName"> <br /><br />
                         Age: <input type="number" min="0" step="1" name="updateAge"> <br /><br />
-                        Position: <input type="text" name="updatePos"> <br /><br />
+                        Position: <input type="text" pattern="[a-zA-Z]*" name="updatePos"> <br /><br />
                         Captain? <input type="number" min="0" step="1" max="1" name="updateCaptain">
-                        Team: <input type="text" name="updateTeam"> <br /><br />
+                        Team: <input type="text" pattern="[a-zA-Z]*" name="updateTeam"> <br /><br />
 
                         <input type="submit" value="Update" name="updateSubmit"></p>
                     </form>
@@ -104,8 +104,8 @@
             <p> Enter values for the attributes you want to match</p>
             <form method="GET" action="hockey.php"> <!--refresh page when submitted-->
                 <input type="hidden" id="selectDivisionRequest" name="selectDivisionRequest">
-                Name: <input type="text" name="selectName"> <br /><br />
-                Conference: <input type="text" name="selectConference"> <br /><br />
+                Division Name: <input type="text" pattern="[a-zA-Z]*" name="selectName"> <br /><br />
+                Conference Name: <input type="text" pattern="[a-zA-Z]*" name="selectConference"> <br /><br />
 
                 <input type="submit" name="selectSubmit"></p>
             </form>
