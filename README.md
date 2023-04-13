@@ -10,6 +10,8 @@ real life performance, has recently exploded in popularity. In the NHL, there ar
 an overwhelming amount of information to know, and we want to make it easier for fans to
 find out what’s important, regardless of their familiarity with fantasy hockey.
 
+![](nhl_database_video_walkthrough.gif)
+
 ### Functionality
 We have implemented a clean, user-inclusive GUI alongside our NHL Stats Database to enable users to easily INSERT new players, UPDATE player records and DELETE player records. 
 We also offer other various COUNT, JOIN, PROJECTION, AGGREGATION and DIVISION queries to provide additional player insights. 
@@ -36,5 +38,3 @@ and error handling implementation indicates what type of error caused the failur
 
 ## Acknowledgements
 UBC CPSC304 2018 Winter Term 1 PHP/Oracle Starter File
-
-![](nhl_database_video_walkthrough.gif)
